@@ -19,7 +19,11 @@ const userSchema = new mongoose.Schema(
         enum: ["starter", "pro", "business"],
         default: "starter"
       },
-      token: String
+      token: String,
+      avatar: {
+        type: String,
+        default: null,
+      },
   },
   {
     versionKey: false,

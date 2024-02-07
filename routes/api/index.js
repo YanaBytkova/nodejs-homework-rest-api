@@ -12,4 +12,5 @@ router.use("/users", authRoutes);
 
 router.use("/contacts", AuthMiddleware, contactRoutes);
 
+
 module.exports = router;
